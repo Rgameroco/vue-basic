@@ -59,6 +59,12 @@ Vue.component('CoinDetail', {
             return this.value / this.coin.price
         }
     },
+    created() {
+        console.log('Created Detail...')
+    },
+    mounted() {
+        console.log('Mounted Detail...')
+    }
 })
 
 
