@@ -23,6 +23,9 @@
             </span>
         </h1>
 
+        <input type="number" v-model="value">
+        <span>{{convertValue}}</span>
+
         <ul v-show=showPrices>
             <li v-for="(p,i) in pricesWithDays" v-bind:class="{orange: p.value == price, red: p.value < price, green:p.value > price}">
                 {{i}} - {{p.day}} - {{p.value}}
